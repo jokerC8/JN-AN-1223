@@ -1588,6 +1588,14 @@ PUBLIC teZCL_Status eZLL_RegisterZncControlBridgeEndPoint(uint8 u8EndPointIdenti
                               NULL, //&psDeviceInfo->sDoorLockClientCluster,
                               NULL);
     #endif
+	
+	#if (defined CLD_HH_DOORLOCK) && (defined HH_DOORLOCK_CLIENT)
+	eCLD_DoorLockCreateHhDoorLock(&psDeviceInfo->sClusterInstance.sHhDoorLockClient,
+					  FALSE,
+					  &sCLD_HhDoorLockCluster,
+					  NULL,
+					  NULL);
+	#endif
     #if (defined CLD_SIMPLE_METERING) && (defined SM_CLIENT)
         /* Create an instance of a Simple Metering cluster as a client */
         eSE_SMCreate(u8EndPointIdentifier,									// uint8 u8Endpoint

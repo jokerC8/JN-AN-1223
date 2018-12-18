@@ -309,8 +309,8 @@
 
 #define ZLL_DISABLE_DEFAULT_RESPONSES FALSE
 
-#define CLD_DOOR_LOCK
-#define DOOR_LOCK_CLIENT
+//#define CLD_DOOR_LOCK
+//#define DOOR_LOCK_CLIENT
 #define CLD_THERMOSTAT
 #define THERMOSTAT_CLIENT
 #define CLD_TEMPERATURE_MEASUREMENT
@@ -324,6 +324,14 @@
 #define APPLIANCE_STATISTICS_SERVER
 #define APPLIANCE_STATISTICS_CLIENT
 #define CLD_SM_ATTR_INSTANTANEOUS_DEMAND
+
+#define CLD_HH_DOORLOCK
+#define HH_DOORLOCK_CLIENT
+#define CLD_DOORLOCK_ATTR_ID_LANG
+#define CLD_DOORLOCK_ATTR_ID_VOLUME
+#define CLD_DOORLOCK_ATTR_ID_HEARTBEATCYCLE
+#define CLD_DOORLOCK_ATTR_ID_POWERINQUIRE
+
 /****************************************************************************/
 /***        Type Definitions                                              ***/
 /****************************************************************************/

@@ -121,6 +121,7 @@
     <Clusters Name="MultiStateInput" Id="0x0012"/>
     <Clusters Name="MultiStateOutput" Id="0x0013"/>
     <Clusters Name="PollControl" Id="0x0020"/>
+    <Clusters Name="HhDoorLock" Id="0xFC00"/>
   </Profiles>
   <Coordinator Name="ZigbeeNodeControlBridge" DiscoveryNeighbourTableSize="16" ActiveNeighbourTableSize="26" RouteDiscoveryTableSize="2" RoutingTableSize="255" BroadcastTransactionTableSize="9" RouteRecordTableSize="5" AddressMapTableSize="10" SecurityMaterialSets="2" MaxNumSimultaneousApsdeReq="5" MaxNumSimultaneousApsdeAckReq="3" MACMutexName="mutexMAC" ZPSMutexName="mutexZPS" FragmentationMaxNumSimulRx="3" FragmentationMaxNumSimulTx="3" DefaultEventMessageName="APP_msgZpsEvents" MACDcfmIndMessage="zps_msgDcfmInd" MACTimeEventMessage="zps_msgTimeEvents" apsNonMemberRadius="2" apsDesignatedCoordinator="true" apsUseInsecureJoin="true" apsMaxWindowSize="8" apsInterframeDelay="10" APSDuplicateTableSize="4" apsSecurityTimeoutPeriod="6000" apsUseExtPANId="0x0000000000000000" SecurityEnabled="true" MACMlmeDcfmIndMessage="zps_msgMlmeDcfmInd" MACMcpsDcfmIndMessage="zps_msgMcpsDcfmInd" APSPersistenceTime="100" NumAPSMESimulCommands="4" StackProfile="2" InterPAN="true" GreenPowerSupport="false" NwkFcSaveCountBitShift="10" ApsFcSaveCountBitShift="10" PermitJoiningTime="0" ChildTableSize="10">
     <Endpoints Id="0" Enabled="true" ApplicationDeviceId="0" ApplicationDeviceVersion="0" Profile="ZDP" Name="ZDO">
@@ -333,7 +334,7 @@
       <OutputClusters Cluster="Level_Control" TxAPDUs="ZigbeeNodeControlBridge->apduZDP" Discoverable="true"/>
       <OutputClusters Cluster="On_Off" TxAPDUs="ZigbeeNodeControlBridge->apduZDP" Discoverable="true"/>
       <OutputClusters Cluster="Scenes" TxAPDUs="ZigbeeNodeControlBridge->apduZDP" Discoverable="true"/>
-      <OutputClusters Cluster="Door_Lock" TxAPDUs="ZigbeeNodeControlBridge->apduZDP" Discoverable="true"/>
+      <OutputClusters Cluster="HhDoorLock" TxAPDUs="ZigbeeNodeControlBridge->apduZDP" Discoverable="true"/>
       <OutputClusters Cluster="ZLL_Utility" TxAPDUs="ZigbeeNodeControlBridge->apduZDP" Discoverable="true"/>
       <OutputClusters Cluster="Metering" TxAPDUs="ZigbeeNodeControlBridge->apduZDP" Discoverable="true"/>
       <OutputClusters Cluster="IASZone" TxAPDUs="ZigbeeNodeControlBridge->apduZDP" Discoverable="true"/>

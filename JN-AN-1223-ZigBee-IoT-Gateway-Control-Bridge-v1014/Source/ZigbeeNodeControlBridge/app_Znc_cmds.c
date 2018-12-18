@@ -1242,7 +1242,8 @@ PUBLIC void vProcessIncomingSerialCommands(void)
 
 				case (E_SL_MSG_ONOFF_NOEFFECTS):
 				{
-					u8Status = eCLD_OnOffCommandSend(au8LinkRxBuffer[3],au8LinkRxBuffer[4],&sAddress,&u8SeqNum,au8LinkRxBuffer[5]);
+					//u8Status = eCLD_OnOffCommandSend(au8LinkRxBuffer[3],au8LinkRxBuffer[4],&sAddress,&u8SeqNum,au8LinkRxBuffer[5]);
+					u8Status = eCLD_HhDoorLockCommandSend(au8LinkRxBuffer[3],au8LinkRxBuffer[4],&sAddress,&u8SeqNum,au8LinkRxBuffer[5]);
 				}
 				break;
 

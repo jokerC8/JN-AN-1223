@@ -88,6 +88,9 @@ extern "C" {
 #include "PollControl.h"
 #endif
 
+#ifdef CLD_HH_DOORLOCK
+#include "hh_doorlock.h"
+#endif
 /****************************************************************************/
 /***        Macro Definitions                                             ***/
 /****************************************************************************/
@@ -217,6 +220,9 @@ typedef struct
 
 #if (defined CLD_POLL_CONTROL) && (defined POLL_CONTROL_CLIENT)
         tsZCL_ClusterInstance sPollControlClient;
+#endif
+#if (defined CLD_HH_DOORLOCK) && (defined HH_DOORLOCK_CLIENT)
+	tsZCL_ClusterInstance sHhDoorLockClient;
 #endif
 } tsZLL_ZncControlBridgeDeviceClusterInstances;
 
